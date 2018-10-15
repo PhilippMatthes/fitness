@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B3DAD3FAF8049A0BC5600A8 /* Pods_fitness_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65579FC929DF531E1216437 /* Pods_fitness_ios.framework */; };
+		BEC195E22174FEAF00AC02D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC195E12174FEAF00AC02D6 /* AppDelegate.swift */; };
+		BEC195E42174FEAF00AC02D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC195E32174FEAF00AC02D6 /* ViewController.swift */; };
+		BEC195E72174FEAF00AC02D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC195E52174FEAF00AC02D6 /* Main.storyboard */; };
+		BEC195E92174FEB100AC02D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC195E82174FEB100AC02D6 /* Assets.xcassets */; };
+		BEC195EC2174FEB100AC02D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC195EA2174FEB100AC02D6 /* LaunchScreen.storyboard */; };
+		BEC195FD2175058900AC02D6 /* ExercisePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC195FC2175058900AC02D6 /* ExercisePlan.swift */; };
+		BEC1960421750D3300AC02D6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEC1960221750D3300AC02D6 /* Interface.storyboard */; };
+		BEC1960621750D3400AC02D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC1960521750D3400AC02D6 /* Assets.xcassets */; };
+		BEC1960D21750D3400AC02D6 /* fitness-watchos Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BEC1960C21750D3400AC02D6 /* fitness-watchos Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BEC1961221750D3400AC02D6 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC1961121750D3400AC02D6 /* InterfaceController.swift */; };
+		BEC1961421750D3400AC02D6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC1961321750D3400AC02D6 /* ExtensionDelegate.swift */; };
+		BEC1961621750D3400AC02D6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC1961521750D3400AC02D6 /* NotificationController.swift */; };
+		BEC1961821750D3400AC02D6 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC1961721750D3400AC02D6 /* ComplicationController.swift */; };
+		BEC1961A21750D3500AC02D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC1961921750D3500AC02D6 /* Assets.xcassets */; };
+		BEC1961F21750D3500AC02D6 /* fitness-watchos.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BEC1960021750D3300AC02D6 /* fitness-watchos.app */; };
+		BEC1962821750D4000AC02D6 /* ExercisePlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC195FC2175058900AC02D6 /* ExercisePlan.swift */; };
+		BEC1962A21750E7A00AC02D6 /* SimpleRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC1962921750E7A00AC02D6 /* SimpleRowController.swift */; };
+		BEC1962C217513E000AC02D6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC1962B217513E000AC02D6 /* Colors.swift */; };
+		BEC1962D2175145200AC02D6 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC1962B217513E000AC02D6 /* Colors.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEC1960E21750D3400AC02D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEC195D62174FEAF00AC02D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEC1960B21750D3400AC02D6;
+			remoteInfo = "fitness-watchos Extension";
+		};
+		BEC1961D21750D3500AC02D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEC195D62174FEAF00AC02D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEC195FF21750D3300AC02D6;
+			remoteInfo = "fitness-watchos";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BEC1962321750D3500AC02D6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BEC1960D21750D3400AC02D6 /* fitness-watchos Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC1962721750D3500AC02D6 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BEC1961F21750D3500AC02D6 /* fitness-watchos.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		12FF686B530711784181C431 /* Pods-fitness-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitness-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-fitness-ios/Pods-fitness-ios.release.xcconfig"; sourceTree = "<group>"; };
+		23F23A6413DC3EEE32B75616 /* Pods-fitness-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitness-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fitness-ios/Pods-fitness-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		A65579FC929DF531E1216437 /* Pods_fitness_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fitness_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC195DE2174FEAF00AC02D6 /* fitness-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fitness-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC195E12174FEAF00AC02D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEC195E32174FEAF00AC02D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BEC195E62174FEAF00AC02D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEC195E82174FEB100AC02D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEC195EB2174FEB100AC02D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEC195ED2174FEB100AC02D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEC195FC2175058900AC02D6 /* ExercisePlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisePlan.swift; sourceTree = "<group>"; };
+		BEC1960021750D3300AC02D6 /* fitness-watchos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fitness-watchos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC1960321750D3300AC02D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BEC1960521750D3400AC02D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEC1960721750D3400AC02D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEC1960C21750D3400AC02D6 /* fitness-watchos Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "fitness-watchos Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC1961121750D3400AC02D6 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		BEC1961321750D3400AC02D6 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		BEC1961521750D3400AC02D6 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		BEC1961721750D3400AC02D6 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		BEC1961921750D3500AC02D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEC1961B21750D3500AC02D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEC1961C21750D3500AC02D6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		BEC1962921750E7A00AC02D6 /* SimpleRowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleRowController.swift; sourceTree = "<group>"; };
+		BEC1962B217513E000AC02D6 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEC195DB2174FEAF00AC02D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B3DAD3FAF8049A0BC5600A8 /* Pods_fitness_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC1960921750D3400AC02D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4882DCE45788D72B2BBF596C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A65579FC929DF531E1216437 /* Pods_fitness_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B9097B8BD89A877A08A56D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				23F23A6413DC3EEE32B75616 /* Pods-fitness-ios.debug.xcconfig */,
+				12FF686B530711784181C431 /* Pods-fitness-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BEC195D52174FEAF00AC02D6 = {
+			isa = PBXGroup;
+			children = (
+				BEC195E02174FEAF00AC02D6 /* fitness-ios */,
+				BEC1960121750D3300AC02D6 /* fitness-watchos */,
+				BEC1961021750D3400AC02D6 /* fitness-watchos Extension */,
+				BEC195DF2174FEAF00AC02D6 /* Products */,
+				6B9097B8BD89A877A08A56D9 /* Pods */,
+				4882DCE45788D72B2BBF596C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BEC195DF2174FEAF00AC02D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEC195DE2174FEAF00AC02D6 /* fitness-ios.app */,
+				BEC1960021750D3300AC02D6 /* fitness-watchos.app */,
+				BEC1960C21750D3400AC02D6 /* fitness-watchos Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEC195E02174FEAF00AC02D6 /* fitness-ios */ = {
+			isa = PBXGroup;
+			children = (
+				BEC1962B217513E000AC02D6 /* Colors.swift */,
+				BEC195F32174FF7500AC02D6 /* Models */,
+				BEC195E12174FEAF00AC02D6 /* AppDelegate.swift */,
+				BEC195E32174FEAF00AC02D6 /* ViewController.swift */,
+				BEC195E52174FEAF00AC02D6 /* Main.storyboard */,
+				BEC195E82174FEB100AC02D6 /* Assets.xcassets */,
+				BEC195EA2174FEB100AC02D6 /* LaunchScreen.storyboard */,
+				BEC195ED2174FEB100AC02D6 /* Info.plist */,
+			);
+			path = "fitness-ios";
+			sourceTree = "<group>";
+		};
+		BEC195F32174FF7500AC02D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BEC195FC2175058900AC02D6 /* ExercisePlan.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BEC1960121750D3300AC02D6 /* fitness-watchos */ = {
+			isa = PBXGroup;
+			children = (
+				BEC1960221750D3300AC02D6 /* Interface.storyboard */,
+				BEC1960521750D3400AC02D6 /* Assets.xcassets */,
+				BEC1960721750D3400AC02D6 /* Info.plist */,
+			);
+			path = "fitness-watchos";
+			sourceTree = "<group>";
+		};
+		BEC1961021750D3400AC02D6 /* fitness-watchos Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BEC1962921750E7A00AC02D6 /* SimpleRowController.swift */,
+				BEC1961121750D3400AC02D6 /* InterfaceController.swift */,
+				BEC1961321750D3400AC02D6 /* ExtensionDelegate.swift */,
+				BEC1961521750D3400AC02D6 /* NotificationController.swift */,
+				BEC1961721750D3400AC02D6 /* ComplicationController.swift */,
+				BEC1961921750D3500AC02D6 /* Assets.xcassets */,
+				BEC1961B21750D3500AC02D6 /* Info.plist */,
+				BEC1961C21750D3500AC02D6 /* PushNotificationPayload.apns */,
+			);
+			path = "fitness-watchos Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEC195DD2174FEAF00AC02D6 /* fitness-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEC195F02174FEB100AC02D6 /* Build configuration list for PBXNativeTarget "fitness-ios" */;
+			buildPhases = (
+				1A22CD4058FD997A0866840F /* [CP] Check Pods Manifest.lock */,
+				BEC195DA2174FEAF00AC02D6 /* Sources */,
+				BEC195DB2174FEAF00AC02D6 /* Frameworks */,
+				BEC195DC2174FEAF00AC02D6 /* Resources */,
+				70FFBAF437AAC2F57D90E5C7 /* [CP] Embed Pods Frameworks */,
+				BEC1962721750D3500AC02D6 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEC1961E21750D3500AC02D6 /* PBXTargetDependency */,
+			);
+			name = "fitness-ios";
+			productName = "fitness-ios";
+			productReference = BEC195DE2174FEAF00AC02D6 /* fitness-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEC195FF21750D3300AC02D6 /* fitness-watchos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEC1962421750D3500AC02D6 /* Build configuration list for PBXNativeTarget "fitness-watchos" */;
+			buildPhases = (
+				BEC195FE21750D3300AC02D6 /* Resources */,
+				BEC1962321750D3500AC02D6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEC1960F21750D3400AC02D6 /* PBXTargetDependency */,
+			);
+			name = "fitness-watchos";
+			productName = "fitness-watchos";
+			productReference = BEC1960021750D3300AC02D6 /* fitness-watchos.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BEC1960B21750D3400AC02D6 /* fitness-watchos Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEC1962021750D3500AC02D6 /* Build configuration list for PBXNativeTarget "fitness-watchos Extension" */;
+			buildPhases = (
+				BEC1960821750D3400AC02D6 /* Sources */,
+				BEC1960921750D3400AC02D6 /* Frameworks */,
+				BEC1960A21750D3400AC02D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "fitness-watchos Extension";
+			productName = "fitness-watchos Extension";
+			productReference = BEC1960C21750D3400AC02D6 /* fitness-watchos Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEC195D62174FEAF00AC02D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Philipp Matthes";
+				TargetAttributes = {
+					BEC195DD2174FEAF00AC02D6 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					BEC195FF21750D3300AC02D6 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					BEC1960B21750D3400AC02D6 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = BEC195D92174FEAF00AC02D6 /* Build configuration list for PBXProject "fitness-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEC195D52174FEAF00AC02D6;
+			productRefGroup = BEC195DF2174FEAF00AC02D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEC195DD2174FEAF00AC02D6 /* fitness-ios */,
+				BEC195FF21750D3300AC02D6 /* fitness-watchos */,
+				BEC1960B21750D3400AC02D6 /* fitness-watchos Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEC195DC2174FEAF00AC02D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC195EC2174FEB100AC02D6 /* LaunchScreen.storyboard in Resources */,
+				BEC195E92174FEB100AC02D6 /* Assets.xcassets in Resources */,
+				BEC195E72174FEAF00AC02D6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC195FE21750D3300AC02D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC1960621750D3400AC02D6 /* Assets.xcassets in Resources */,
+				BEC1960421750D3300AC02D6 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC1960A21750D3400AC02D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC1961A21750D3500AC02D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A22CD4058FD997A0866840F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fitness-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70FFBAF437AAC2F57D90E5C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-fitness-ios/Pods-fitness-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Material/Material.framework",
+				"${BUILT_PRODUCTS_DIR}/Motion/Motion.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Material.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Motion.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fitness-ios/Pods-fitness-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEC195DA2174FEAF00AC02D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC195E42174FEAF00AC02D6 /* ViewController.swift in Sources */,
+				BEC1962C217513E000AC02D6 /* Colors.swift in Sources */,
+				BEC195FD2175058900AC02D6 /* ExercisePlan.swift in Sources */,
+				BEC195E22174FEAF00AC02D6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC1960821750D3400AC02D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC1962A21750E7A00AC02D6 /* SimpleRowController.swift in Sources */,
+				BEC1961621750D3400AC02D6 /* NotificationController.swift in Sources */,
+				BEC1961821750D3400AC02D6 /* ComplicationController.swift in Sources */,
+				BEC1962D2175145200AC02D6 /* Colors.swift in Sources */,
+				BEC1962821750D4000AC02D6 /* ExercisePlan.swift in Sources */,
+				BEC1961421750D3400AC02D6 /* ExtensionDelegate.swift in Sources */,
+				BEC1961221750D3400AC02D6 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEC1960F21750D3400AC02D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEC1960B21750D3400AC02D6 /* fitness-watchos Extension */;
+			targetProxy = BEC1960E21750D3400AC02D6 /* PBXContainerItemProxy */;
+		};
+		BEC1961E21750D3500AC02D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEC195FF21750D3300AC02D6 /* fitness-watchos */;
+			targetProxy = BEC1961D21750D3500AC02D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEC195E52174FEAF00AC02D6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEC195E62174FEAF00AC02D6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEC195EA2174FEB100AC02D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEC195EB2174FEB100AC02D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BEC1960221750D3300AC02D6 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEC1960321750D3300AC02D6 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEC195EE2174FEB100AC02D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEC195EF2174FEB100AC02D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEC195F12174FEB100AC02D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23F23A6413DC3EEE32B75616 /* Pods-fitness-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S36925NV4E;
+				INFOPLIST_FILE = "fitness-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.philippmatthes.fitness-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEC195F22174FEB100AC02D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12FF686B530711784181C431 /* Pods-fitness-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S36925NV4E;
+				INFOPLIST_FILE = "fitness-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.philippmatthes.fitness-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BEC1962121750D3500AC02D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S36925NV4E;
+				INFOPLIST_FILE = "fitness-watchos Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.philippmatthes.fitness-ios.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		BEC1962221750D3500AC02D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S36925NV4E;
+				INFOPLIST_FILE = "fitness-watchos Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.philippmatthes.fitness-ios.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		BEC1962521750D3500AC02D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S36925NV4E;
+				IBSC_MODULE = fitness_watchos_Extension;
+				INFOPLIST_FILE = "fitness-watchos/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.philippmatthes.fitness-ios.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		BEC1962621750D3500AC02D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S36925NV4E;
+				IBSC_MODULE = fitness_watchos_Extension;
+				INFOPLIST_FILE = "fitness-watchos/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.philippmatthes.fitness-ios.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEC195D92174FEAF00AC02D6 /* Build configuration list for PBXProject "fitness-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC195EE2174FEB100AC02D6 /* Debug */,
+				BEC195EF2174FEB100AC02D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEC195F02174FEB100AC02D6 /* Build configuration list for PBXNativeTarget "fitness-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC195F12174FEB100AC02D6 /* Debug */,
+				BEC195F22174FEB100AC02D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEC1962021750D3500AC02D6 /* Build configuration list for PBXNativeTarget "fitness-watchos Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC1962121750D3500AC02D6 /* Debug */,
+				BEC1962221750D3500AC02D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEC1962421750D3500AC02D6 /* Build configuration list for PBXNativeTarget "fitness-watchos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC1962521750D3500AC02D6 /* Debug */,
+				BEC1962621750D3500AC02D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEC195D62174FEAF00AC02D6 /* Project object */;
+}
